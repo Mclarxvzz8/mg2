@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0b3c5d, #1e81b0);
+    color: white;
+    text-align: center;
+}
+
+.topo {
+    padding: 60px 20px;
+}
+
+.cartinhas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CARTINHA */
+.cartinha {
+    width: 100%;
+    height: 240px;
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.cartinha-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.cartinha.aberta .cartinha-inner {
+    transform: rotateY(180deg);
+}
+
+.cartinha-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+
+/* FRENTE */
+.frente {
+    background: rgba(255,255,255,0.2);
+    font-size: 1.2rem;
+}
+
+/* VERSO */
+.verso {
+    background: rgba(255,105,180,0.9);
+    transform: rotateY(180deg);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+#botaoMusica {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: #ff69b4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+#botaoMusica:hover {
+    transform: scale(1.1);
+}

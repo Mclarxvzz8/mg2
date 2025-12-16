@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Manu Goes 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- OVERLAY META DE AMOR -->
+<div id="overlayMetaAmor">
+    <div class="overlay-conteudo">
+        💖 <br>
+        Você atingiu a meta <br>
+        do nosso amor 💕
+    </div>
+</div>
+<!-- LIVRO DO AMOR -->
+<div class="livro-fechado" onclick="abrirLivro()">
+    📖 Livro do Nosso Amor
+</div>
+
+<div id="livroOverlay" class="livro-overlay">
+    <div class="livro">
+        <button class="fechar-livro" onclick="fecharLivro()">✕</button>
+        <h2>Para o amor da minha vida 💙</h2>
+        <p id="textoLivro"></p>
+    </div>
+</div>
+
+<a 
+  href="https://wa.me/5519997130644?text=Oi%20amor%20%20vim%20falar%20com%20a%20namorada%20de%20plantão"
+  target="_blank"
+  class="whats-impacto"
+>
+  <div class="whats-status">Namorada online agora 💙</div>
+  <div class="whats-botao">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  </div>
+</a>
+
+
+<div class="top-menu">
+    <a href="cartinhas.html" class="menu-card">💌 Cartinhas</a>
+    <a href="secreta.html" class="menu-card">🔒 Área Secreta</a>
+</div>
+
+
+
+
+<body>
+
+<audio id="musica" loop>
+    <source src="musica/Novo Amor - Anchor (Lyrics) [EAuYkzbxxj0].mp3" type="audio/mpeg">
+</audio>
+
+<button id="botaoMusica">▶ Música</button>
+
+<header class="menu-header">
+    <h1>Para Manu Goes 💖</h1>
+    <p>Feito com todo meu amor</p>
+
+    <div class="menu-cards">
+        <div class="menu-card" onclick="mostrarSecao('sobre')">💖 Sobre</div>
+        <div class="menu-card" onclick="mostrarSecao('fotos')">📸 Fotos</div>
+        <div class="menu-card" onclick="mostrarSecao('gostos')">✨ Gostos</div>
+        <div class="menu-card" onclick="mostrarSecao('tempo')">⏳ Nós</div>
+        <div class="menu-card" onclick="mostrarSecao('jogo')">💋 Jogo</div>
+    </div>
+</header>
+
+<main>
+
+<!-- SOBRE -->
+<section id="sobre" class="secao ativa">
+    <h2>Sobre Ela 💖</h2>
+    <div class="bio-conteudo">
+        <img src="imagens/1.jpeg" alt="Foto da Manu" class="bio-foto">
+        <p>
+            Ela é a luz que ilumina qualquer lugar que passa.
+            Meu amor, minha paz, minha pessoa favorita no mundo 💙
+        </p>
+    </div>
+</section>
+
+<!-- FOTOS -->
+<section id="fotos" class="secao">
+    <h2>Nossas Fotos 💞</h2>
+    <div class="slideshow-container">
+        <img class="slide active" src="imagens/1.jpeg">
+        <img class="slide" src="imagens/2.jpeg">
+        <img class="slide" src="imagens/3.jpeg">
+        <img class="slide" src="imagens/4.jpeg">
+        <img class="slide" src="imagens/5.jpeg">
+        <img class="slide" src="imagens/6.jpeg">
+        <img class="slide" src="imagens/7.jpeg">
+        <img class="slide" src="imagens/8.jpeg">
+        <video class="slide" muted loop>
+            <source src="imagens/video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- GOSTOS -->
+<section id="gostos" class="secao">
+    <h2>Coisas que ela ama 💖</h2>
+    <div class="carousel">
+        <div class="card" data-title="Séries" data-image="imagens/serie11.png" data-desc="Ama ver esse desde dos seus 13">
+            <h3>Séries</h3>
+        </div>
+        <div class="card" data-title="Filmes" data-image="imagens/compose.webp" data-desc="Filme de conforto, voce ama desenhos assim">
+            <h3>Filmes</h3>
+        </div>
+        <div class="card" data-title="Viagens" data-image="imagens/las.webp" data-desc="sua viagem dos sonhos, ir a cassinos de lá, explorar tudo">
+            <h3>Viagens</h3>
+        </div>
+        <div class="card" data-title="Música" data-image="imagens/du.jpeg" data-desc="não aguento voce cantando isso 24 horas por dia">
+            <h3>Música</h3>
+        </div>
+        <div class="card" data-title="Cantor" data-image="imagens/chorao.jpg" data-desc="por onde passa lembro de voce por ele, seu cantor de conforto">
+            <h3>Cantor</h3>
+        </div>
+        <div class="card" data-title="Bebida" data-image="imagens/cocaa.jpg" data-desc="Voce ama uma coQUINHAAAAAAA GELADINHAAAAAA">
+            <h3>Bebida</h3>
+        </div>
+        <div class="card" data-title="Cor" data-image="imagens/rosi.png" data-desc="Nem preciso falar amor, é a sua cor favorita">
+            <h3>Cor</h3>
+        </div>
+    </div>
+</section>
+
+<!-- TEMPO -->
+<section id="tempo" class="secao">
+    <h2>Estamos juntas há 💙</h2>
+    <div class="contador">
+        <div><span id="dias">0</span><br>Dias</div>
+        <div><span id="horas">0</span><br>Horas</div>
+        <div><span id="minutos">0</span><br>Minutos</div>
+    </div>
+</section>
+
+<!-- JOGO -->
+<section id="jogo" class="secao">
+    <div class="jogo-card">
+        <h2>Meta de Amor 💖</h2>
+        <p>Clique para mandar beijos e completar nossa barra de amor.</p>
+
+        <div class="barra">
+            <div id="barraProgresso"></div>
+        </div>
+
+        <button class="botao-jogo" onclick="mandarBeijo()">😍</button>
+
+        <div class="boosters">
+            <div class="booster">💋 Beijo Duplo ao atingir 50%</div>
+            <div class="booster">💖 Explosão de amor ao atingir 100%</div>
+        </div>
+    </div>
+</section>
+
+<div id="mensagemFinal">💖 META DE AMOR ATINGIDA 💖</div>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <span id="fechar">&times;</span>
+    <h2 id="modalTitulo"></h2>
+    <img id="modalImagem">
+    <p id="modalDescricao"></p>
+</div>
+
+<footer>
+    <p>Feito com amor para Manu Goes 💖</p>
+    <link rel="stylesheet" href="">
+</footer>
+
+<script src="script.js"></script>
+<div class="ondas">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+</body>
+</html>
